@@ -1,14 +1,31 @@
-# REPLACE THIS WITH YOUR GAME NAME
+---
+waltz:
+  title: EGDD - RushAPI
+meta:
+  version: 0.0.1
+  gdd authors:
+    - Bruce Bermel <brbe@udel.edu>
+    - John-Paul Newton <jpnewton@udel.edu>
+  template authors:
+    - Austin Cory Bart <acbart@udel.edu>
+    - Mark Sheriff
+    - Alec Markarian
+    - Benjamin Stanley
+---
+
+
+
+# RushAPI
 
 ## Elevator Pitch
 
-Replace this with a one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator, and you only had 60 seconds. You should not write more than a few sentences at most. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.
+You are an API service that is responsible for handling user's requests. The goal is to complete these requests by writing proper API requests in a given amount of time and responding properly. The difficulty of the game comes in more endpoints being added and requests coming in more rapidly
 
 ## Influences (Brief)
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- *Overcooked*:
+  - Medium: *Game*
+  - Explanation: *I think the idea of a fast-paced "response to orders" style game fits the structure of API requests perfectly. I also think the idea of knowing what request to write should be second nature, so rapidly repeating this process build good habit*
 - *Influence #2*:
   - Medium: *(Television, Games, Literature, Movies, etc.)*
   - Explanation: *In one paragraph or less, explain why this is an influence.*
