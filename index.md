@@ -14,7 +14,6 @@ meta:
 ---
 
 
-
 # RushAPI
 
 ## Elevator Pitch
@@ -26,54 +25,67 @@ You are an API service that is responsible for handling user's requests. The goa
 - *Overcooked*:
   - Medium: *Game*
   - Explanation: *I think the idea of a fast-paced "response to orders" style game fits the structure of API requests perfectly. I also think the idea of knowing what request to write should be second nature, so rapidly repeating this process build good habit*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- *Mini Motorways*:
+  - Medium: *Game*
+  - Explanation: *The simple and addicting aesthetic makes playing the game feel natural and reptitively fun*
+- *Postman*:
+  - Medium: *Utility*
+  - Explanation: *Most accurately mirrors the actions of the user*
 
 ## Core Gameplay Mechanics (Brief)
 
 *Give a very high-level description of any core gameplay mechanics*
 
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- *Users with pre-set ID numbers (on shirt) make requests*
+- *User decides what type of request and accesses "database"*
+- *Depending on request type, user performs proper operation*
+- *User selects proper response code to give back*
+- *Timeout bar that can be replenished via dollars, however only a set number of dollars ever exist*
+- *Game over when timeout*
+- *Users can have "special requests" that give certain powerups when completed*
+- *As game progresses, timeout speeds up and schema grows new tables*
 
 # Learning Aspects
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+- Database management
+- API Request Types
+- Handling API Request Responses
+- JSON Handling
+
 
 ## Target Audiences
 
-*Who are your learners?*
+*Sophomore/Junior Undergraduate CS Students*
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+*Supplementary practice for an assignment that introduces uses API calls without directly teaching them*
 
 ## Learning Objectives
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- *Recognize API Requests*: *After playing, students will be able to identify the proper API request type for a given use case*
+- *Handle Response*: *After playing, students will be able to selecting the proper respsonse code for different API request scenarios*
+- *JSON Handling*: *After playing, students should be able to construct proper json content for API requests*
+- *JSON Parsing*: *After playing, students should be able to identify key fields in API JSON response*
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- *Players should be able to identify the purpose of API Requests*
+- *Players should be able to connect the use of API requests to databases*
+- *Players should be able to roughly identify entity relationships in databases*
 
 ## Assessment Measures
 
-*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
+*Given a list of API use cases, identify the correct API request type to use*
+*Given an API Response code, identify its meaning*
+*Given an item and its description, create a JSON object to represent the item with all appropriate properties*
+*Given a JSON response and a key, identify the value associated with the key*
 
 
 
@@ -81,9 +93,10 @@ You are an API service that is responsible for handling user's requests. The goa
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
+- *The Game is made to teach the process of API requests, which is not something that is commonly taught well or at all*
+- *The game is made to be addicting and mindless, to simulate a developer's actions when creating API requests*
+- *The top-dwon/resource management genre of game is one that does not have a lot of competitors, making it a unique experience*
+- *COME BACK TO HERE*
 - *Reason #4*
 - *etc.*
 
