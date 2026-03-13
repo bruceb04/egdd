@@ -22,28 +22,28 @@ You are an API service that is responsible for handling user's requests. The goa
 
 ## Influences (Brief)
 
-- *Overcooked*:
+- Overcooked:
   - Medium: *Game*
-  - Explanation: *I think the idea of a fast-paced "response to orders" style game fits the structure of API requests perfectly. I also think the idea of knowing what request to write should be second nature, so rapidly repeating this process build good habit*
-- *Mini Motorways*:
+  - Explanation: I think the idea of a fast-paced "response to orders" style game fits the structure of API requests perfectly. I also think the idea of knowing what request to write should be second nature, so rapidly repeating this process build good habit
+- Mini Motorways:
   - Medium: *Game*
-  - Explanation: *The simple and addicting aesthetic makes playing the game feel natural and reptitively fun*
-- *Postman*:
+  - Explanation: The simple and addicting aesthetic makes playing the game feel natural and reptitively fun
+- Postman:
   - Medium: *Utility*
-  - Explanation: *Most accurately mirrors the actions of the user*
+  - Explanation: Most accurately mirrors the actions of the user
 
 ## Core Gameplay Mechanics (Brief)
 
 *Give a very high-level description of any core gameplay mechanics*
 
-- *Users with pre-set ID numbers (on shirt) make requests*
-- *User decides what type of request and accesses "database"*
-- *Depending on request type, user performs proper operation*
-- *User selects proper response code to give back*
-- *Timeout bar that can be replenished via dollars, however only a set number of dollars ever exist*
-- *Game over when timeout*
-- *Users can have "special requests" that give certain powerups when completed*
-- *As game progresses, timeout speeds up and schema grows new tables*
+- Users with pre-set ID numbers (on shirt) make requests
+- User decides what type of request and accesses "database"
+- Depending on request type, user performs proper operation
+- User selects proper response code to give back
+- Timeout bar that can be replenished via dollars, however only a set number of dollars ever exist
+- Game over when timeout
+- Users can have "special requests" that give certain powerups when completed
+- As game progresses, timeout speeds up and schema grows new tables
 
 # Learning Aspects
 
@@ -57,35 +57,35 @@ You are an API service that is responsible for handling user's requests. The goa
 
 ## Target Audiences
 
-*Sophomore/Junior Undergraduate CS Students*
+Sophomore/Junior Undergraduate CS Students
 
 ## Target Contexts
 
-*Supplementary practice for an assignment that introduces uses API calls without directly teaching them*
+Supplementary practice for an assignment that introduces uses API calls without directly teaching them
 
 ## Learning Objectives
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Recognize API Requests*: *After playing, students will be able to identify the proper API request type for a given use case*
-- *Handle Response*: *After playing, students will be able to selecting the proper respsonse code for different API request scenarios*
-- *JSON Handling*: *After playing, students should be able to construct proper json content for API requests*
-- *JSON Parsing*: *After playing, students should be able to identify key fields in API JSON response*
+- Recognize API Requests*: After playing, students will be able to identify the proper API request type for a given use case
+- Handle Response: After playing, students will be able to selecting the proper respsonse code for different API request scenarios
+- JSON Handling: After playing, students should be able to construct proper json content for API requests
+- JSON Parsing: After playing, students should be able to identify key fields in API JSON response
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Players should be able to identify the purpose of API Requests*
-- *Players should be able to connect the use of API requests to databases*
-- *Players should be able to roughly identify entity relationships in databases*
+- Players should be able to identify the purpose of API Requests
+- Players should be able to connect the use of API requests to databases
+- Players should be able to roughly identify entity relationships in databases
 
 ## Assessment Measures
 
-*Given a list of API use cases, identify the correct API request type to use*
-*Given an API Response code, identify its meaning*
-*Given an item and its description, create a JSON object to represent the item with all appropriate properties*
-*Given a JSON response and a key, identify the value associated with the key*
+Given a list of API use cases, identify the correct API request type to use
+Given an API Response code, identify its meaning
+Given an item and its description, create a JSON object to represent the item with all appropriate properties
+Given a JSON response and a key, identify the value associated with the key
 
 
 
@@ -93,9 +93,9 @@ You are an API service that is responsible for handling user's requests. The goa
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *The Game is made to teach the process of API requests, which is not something that is commonly taught well or at all*
-- *The game is made to be addicting and mindless, to simulate a developer's actions when creating API requests*
-- *The top-dwon/resource management genre of game is one that does not have a lot of competitors, making it a unique experience*
+- The Game is made to teach the process of API requests, which is not something that is commonly taught well or at all
+- The game is made to be addicting and mindless, to simulate a developer's actions when creating API requests
+- The top-down/resource management genre of game is one that does not have a lot of competitors, making it a unique experience
 - *COME BACK TO HERE*
 - *Reason #4*
 - *etc.*
