@@ -104,50 +104,63 @@ Given a JSON response and a key, identify the value associated with the key
 
 ## Player Interaction Pattern
 
-*Describe how people play your game, how many players are involved at once, how they interact with the system works, etc.*
+This is a single-player game where the player interacts with the system by typing API requests into a text field and submitting them.
 
 ## Player Modes
 
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
-
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+-Endless Mode: The player continuously processes incoming user API requests, gaining additional time for each successful request, and the game ends when the timer runs out.
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *Primary Objective #2*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
+- Complete API Requests:
+    - Description: Players must construct correct API requests to satisfy NPC user requests.
+    - Alignment: Reinforces learning of HTTP methods and endpoint structure.
+- Respond Before Time Runs Out:
+    - Description: The player must complete requests quickly in order to keep the timer from reaching zero. Each successful request adds additional time.
+    - Alignment: Encourages rapid recognition of request patterns and reinforces repeated practice with API syntax.
+- Construct Valid JSON Bodies:
+    - Description: For certain requests such as POST, PUT, and PATCH, the player must correctly construct a JSON body containing the appropriate fields and values.
+    - Alignment: Reinforces understanding of request payload structure.
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+Players can:
+  - Select an NPC request from the queue
+  - Type an API request
+  - Enter a JSON body
+  - Submit the request
+  - View the simulated server response
 
 # Rules
 
-*What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
+- Requests must be complete before the timer expires
+- Correct requests will award points and time increase
+- Incorrct requests will award no points and waste time
+- Completing "boss" request grants temporary power-ups such as time slow/freeze or double points
 
 # Objects/Entities
 
-*What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
+- NPC users requesting API operations
+- "Boss" NPC requesting API operations with higher difficulty and rewards
+- Request queue which displays incoming user requests
+- Terminal where the player types the request
+- JSON body input where the player
+- Response window displays the server's response after the submitted request
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
-
+- NPCs enter a queue requesting API actions. The player can select one of the top requests and must complete it before the timer runs out. If the the player takes too long to fulfill requests the timer will run out and the player will lose.
+- Players must type the correct request in a curl style format. For certain requests, players must also provide a JSON body.
+- After submitting a request, the system returns a simulated API response showing either success or an error.
     
 ## Feedback
 
-*Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
-
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+- 202 Accepted: Displayed when the player submits a correct API request. The response window shows a success message, the player earns points, and additional time is added to the timer.
+- 404 Not Found: Displayed when the player types an incorrect endpoint that does not exist in the API.
+- 400 Bad Request: Displayed when the player submits an invalid or incorrectly formatted JSON body.
+- 500 Internal Server Error: Displayed when the game ends because the timer runs out, indicating that the API server has become overloaded and can no longer process requests.
+- Long-Term Feedback: The player’s score, time remaining, and total successful requests indicate how well they are performing over time.
+- Difficulty: As the player progresses, requests become more complex with additional endpoints and JSON body requirements, helping players track their improvement.
 
 # Story and Gameplay
 
