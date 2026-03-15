@@ -13,7 +13,6 @@ meta:
     - Benjamin Stanley
 ---
 
-
 # RushAPI
 
 ## Elevator Pitch
@@ -33,8 +32,6 @@ You are an API service that is responsible for handling user's requests. The goa
   - Explanation: Most accurately mirrors the actions of the user
 
 ## Core Gameplay Mechanics (Brief)
-
-*Give a very high-level description of any core gameplay mechanics*
 
 - Users with pre-set ID numbers (on shirt) make requests
 - User decides what type of request and accesses "database"
@@ -65,16 +62,12 @@ Supplementary practice for an assignment that introduces uses API calls without 
 
 ## Learning Objectives
 
-*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
-
 - Recognize API Requests*: After playing, students will be able to identify the proper API request type for a given use case
 - Handle Response: After playing, students will be able to selecting the proper respsonse code for different API request scenarios
 - JSON Handling: After playing, students should be able to construct proper json content for API requests
 - JSON Parsing: After playing, students should be able to identify key fields in API JSON response
 
 ## Prerequisite Knowledge
-
-*What do they need to know prior to trying this game?*
 
 - Players should be able to identify the purpose of API Requests
 - Players should be able to connect the use of API requests to databases
@@ -88,17 +81,12 @@ Given an item and its description, create a JSON object to represent the item wi
 Given a JSON response and a key, identify the value associated with the key
 
 
-
 # What sets this project apart?
-
-*Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
 - The Game is made to teach the process of API requests, which is not something that is commonly taught well or at all
 - The game is made to be addicting and mindless, to simulate a developer's actions when creating API requests
 - The top-down/resource management genre of game is one that does not have a lot of competitors, making it a unique experience
-- *COME BACK TO HERE*
-- *Reason #4*
-- *etc.*
+- The game is designed to make the user both faster and more accurate when creating API requests by revealing the process behind it, not just how to do it
 
 # Player Interaction Patterns and Modes
 
@@ -166,56 +154,45 @@ Players can:
 
 ## Presentation of Rules
 
-*Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+The beginning of the game will have a tutorial section which walks the user through the gameplay loop. Other mechanics that are unlocked later are taught through repetition and conditioning while slowly decreasing the amount of apparent information revealed to the user.
 
 ## Presentation of Content
 
-*Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+The user will initialy be guided through the API call process via the game's tutorial and initial difficulty. The POST/GET/etc options will be revealed to the user at first and the inital difficulty level will allow the user plenty of leway when going through the process. The game's difficulty would increase by both lowering the room for error and removing the obvious instruction to encourage critical thinking. 
 
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+The user plays as an API, and has to fulfull user requests by managing table data within a certain timeframe. The user can spend a fixed number of "time-savers" to help replenish time at any point but the timeout will lower and requests will increase in difficulty as the game progresses. The user will be given points for correct requests and will lose time or points with incorrect requests. Users can occasionally have "speial requests" that upon completion offer the user some kind of power up.
 
 ## Storyboarding
 
-*Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
+![RushAPI Storyboard](https://i.imgur.com/DrYlUuM.jpeg)
 
 # Assets Needed
 
 ## Aethestics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+A simple, top down interface similar to that of [Mini Motorways](https://www.youtube.com/watch?v=3qkgLabCByo). The sounds for correct requests will be simple and audibly pleasing to encourage the user to continue, while the incorrect requets should cause the user to feel a negative or bad feeling
 
 ## Graphical
 
 - Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
+  - "Characters" will be simple person icons with different colors on their shirts to signify the corresponding `user_id` in the users table
 - Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+  - TBD
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+  - TBD
 
 
 ## Audio
 
-
-*Game region/phase/time are ways of designating a particularly important place in the game.*
-
 - Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
-  
-*Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
+  - TBD
 
 - Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
+  - TBD
+
+*please note that any fields marked "TBD" will be filled, along with appropriate documentation and approval from Dr. Bart*
 
 
 # Metadata
