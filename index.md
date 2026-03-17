@@ -82,12 +82,31 @@ Supplementary practice for an assignment that introduces uses API calls without 
 
 ## Assessment Measures
 
-Given a list of API use cases, identify the correct API request type to use
-Given an API Response code, identify its meaning
-Given an item and its description, create a JSON object to represent the item with all appropriate properties
-Given a JSON response and a key, identify the value associated with the key
+Q: In the endpoint /users/3/orders/10, what does 10 represent?
+A: Order with ID 10 belonging to user 3.
 
+Q: Which HTTP request would retrieve all the users?
+A: GET /users
 
+Q: Create a new user with name "Alice" and age 22.
+A: POST /users
+    {
+      "name": "Alice",
+      "age": 22
+    }
+
+Q: What does a 404 Not Found error imply?
+A: The requested endpoint does not exist.
+
+Q: Get /users/2 returns the following JSON body:
+    {
+      "id": 2,
+      "name": "Joe",
+      "age": 45,
+      "orders": [10, 22, 45]
+    }
+  What does the orders field indicate?
+A: A list of order IDs associated with the user.
 
 # What sets this project apart?
 
