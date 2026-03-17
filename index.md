@@ -75,31 +75,35 @@ Supplementary practice for an assignment that introduces uses API calls without 
 
 ## Assessment Measures
 
-Q: In the endpoint /users/3/orders/10, what does 10 represent?
-A: Order with ID 10 belonging to user 3.
+### Q1: In the endpoint /users/3/orders/10, what does 10 represent?
+**A:** Order with ID 10 belonging to user 3.
 
-Q: Which HTTP request would retrieve all the users?
-A: GET /users
+### Q2: Which HTTP request would retrieve all the users?
+**A:** GET /users
 
-Q: Create a new user with name "Alice" and age 22.
-A: POST /users
-    {
-      "name": "Alice",
-      "age": 22
-    }
+### Q3: Create a new user with name "Alice" and age 22.
+**A:** 
+POST /users
+```json
+{
+  "name": "Alice",
+  "age": 22
+}
+```
+### Q4: What does a 404 Not Found error imply?
+**A:** The requested endpoint does not exist.
 
-Q: What does a 404 Not Found error imply?
-A: The requested endpoint does not exist.
-
-Q: Get /users/2 returns the following JSON body:
+### Q5: Get /users/2 returns the following JSON body:
+```json
     {
       "id": 2,
       "name": "Joe",
       "age": 45,
       "orders": [10, 22, 45]
     }
-  What does the orders field indicate?
-A: A list of order IDs associated with the user.
+```
+### What does the orders field indicate?
+**A:** A list of order IDs associated with the user.
 
 # What sets this project apart?
 
@@ -148,8 +152,8 @@ Players can:
 
 # Objects/Entities
 
-- NPC users requesting API operations
-- "Boss" NPC requesting API operations with higher difficulty and rewards
+- NPCs requesting API operations
+- "Boss" NPCs requesting API operations with higher difficulty and rewards
 - Request queue which displays incoming user requests
 - Terminal where the player types the request
 - JSON body input where the player
