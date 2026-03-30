@@ -78,10 +78,10 @@ Supplementary practice for an assignment that introduces uses API calls without 
 ### Q1: In the endpoint /users/3/orders/10, what does 10 represent?
 **A:** Order with ID 10 belonging to user 3.
 
-### Q2: Which HTTP request would retrieve all the users?
-**A:** GET /users
+### Q2: A developer sends the request GET /users/123 but only receives one user. They actually need all users. What should they change?
+**A:** They should use GET /users instead.
 
-### Q3: Create a new user with name "Alice" and age 22.
+### Q3: Create a new user with name "Alice" and age 22. Assume the user object supports name and age.
 **A:** 
 POST /users
 ```json
@@ -93,7 +93,7 @@ POST /users
 ### Q4: What does a 404 Not Found error imply?
 **A:** The requested endpoint does not exist.
 
-### Q5: Get /users/2 returns the following JSON body:
+### Q5: GET /users/2 returns the following JSON body:
 ```json
     {
       "id": 2,
