@@ -75,6 +75,8 @@ Supplementary practice for an assignment that introduces uses API calls without 
 
 ## Assessment Measures
 
+This assessment is based on a RESTful API. Resources are accessed using standard HTTP methods and URL-based endpoints. Each resource is identified by a unique ID, and relationships between resources may be represented using nested routes (e.g., `/users/{userId}/orders/{orderId}`).
+
 ### Q1: In the endpoint /users/3/orders/10, what does 10 represent?
 **A:** Order with ID 10 belonging to user 3.
 
@@ -99,11 +101,11 @@ POST /users
       "id": 2,
       "name": "Joe",
       "age": 45,
-      "orders": [10, 22, 45]
+      "orderIds": [10, 22, 45]
     }
 ```
-### What does the orders field indicate?
-**A:** A list of order IDs associated with the user.
+### What type of data does the orderIds field represent?
+**A:** A list of identifiers referencing orders associated with the user.
 
 # What sets this project apart?
 
