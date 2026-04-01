@@ -75,37 +75,98 @@ Supplementary practice for an assignment that introduces uses API calls without 
 
 ## Assessment Measures
 
-This assessment is based on a RESTful API. Resources are accessed using standard HTTP methods and URL-based endpoints. Each resource is identified by a unique ID, and relationships between resources may be represented using nested routes (e.g., `/users/{userId}/orders/{orderId}`).
+### Analyze the following diagram, then use it to answer the questions below
+![ER Diagram](./mermaid-diagram-example.png)
 
-### Q1: In the endpoint /users/3/orders/10, what does 10 represent?
-**A:** Order with ID 10 belonging to user 3.
+### Q1  
+If I wanted to **retrieve all pets owned by a specific user**, what table(s) would I access and what type of request should I make?  
 
-### Q2: A developer sends the request GET /users/123 but only receives one user. They actually need all users. What should they change?
-**A:** They should use GET /users instead.
+**A:**  
+- Tables: `User`, `Pet`  
+- Request Type: `GET`  
 
-### Q3: Create a new user with name "Alice" and age 22. Assume the user object supports name and age.
-**A:** 
-POST /users
-```json
-{
-  "name": "Alice",
-  "age": 22
-}
-```
-### Q4: What does a 404 Not Found error imply?
-**A:** The requested endpoint does not exist.
+---
 
-### Q5: GET /users/2 returns the following JSON body:
-```json
-    {
-      "id": 2,
-      "name": "Joe",
-      "age": 45,
-      "orderIds": [10, 22, 45]
-    }
-```
-### What type of data does the orderIds field represent?
-**A:** A list of identifiers referencing orders associated with the user.
+### Q2  
+If I wanted to **add a new pet to a user**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Pet` (linked to `User`)  
+- Request Type: `POST`  
+
+---
+
+### Q3  
+If I wanted to **find the job associated with a specific user**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `User`, `Employment`, `Job`  
+- Request Type: `GET`  
+
+---
+
+### Q4  
+If I wanted to **assign a new job to a user**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Employment`, `User`, `Job`  
+- Request Type: `POST`  
+
+---
+
+### Q5  
+If I wanted to **retrieve all vehicles stored at a user’s house**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `User`, `House`, `Vehicle`  
+- Request Type: `GET`  
+
+---
+
+### Q6  
+If I wanted to **update where a vehicle is parked**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Vehicle`  
+- Request Type: `PATCH` (or `PUT`)  
+
+---
+
+### Q7  
+If I wanted to **create a new user in the system**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `User`  
+- Request Type: `POST`  
+
+---
+
+### Q8  
+If I wanted to **retrieve all jobs available in the system**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Job`  
+- Request Type: `GET`  
+
+---
+
+### Q9  
+If I wanted to **remove a pet from a user**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Pet`  
+- Request Type: `DELETE`  
+
+---
+
+### Q10  
+If I wanted to **retrieve all employment records for a user**, what table(s) would I access and what type of request should I make?  
+
+**A:**  
+- Tables: `Employment`, `User`  
+- Request Type: `GET`  
+- Endpoint Example: `/users/{userId}/employment`
+
 
 # What sets this project apart?
 
@@ -192,7 +253,8 @@ The user plays as an API, and has to fulfull user requests by managing table dat
 
 ## Storyboarding
 
-![RushAPI Storyboard](https://i.imgur.com/DrYlUuM.jpeg)
+![RushAPI Storyboard](https://i.imgur.com/hJcoOwA.jpeg)
+![RushAPI Table Layout Storyboard](https://i.imgur.com/MSWqaAN.jpeg)
 
 # Assets Needed
 
@@ -216,7 +278,8 @@ A simple, top down interface similar to that of [Mini Motorways](https://www.you
   - TBD
 
 - Sound List (SFX)
-  - TBD
+  - Successfull Request Sound: [Pixabay](https://pixabay.com/sound-effects/film-special-effects-pop-402324/)
+  - Low time sound: [Pixabay](https://pixabay.com/sound-effects/technology-alarm-478339/)
 
 *please note that any fields marked "TBD" will be filled, along with appropriate documentation and approval from Dr. Bart*
 
